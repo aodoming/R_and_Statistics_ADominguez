@@ -1,0 +1,128 @@
+                              TECHNICAL REPORT  
+                               
+                               
+                               # MPG Regression #
+
+# Which variables/coefficients provided a non-random(too small to reject the null hypothesis) amount of variance to the mpg values in the dataset?
+
+
+    Multiple Linear Regression Results
+    Call:
+    lm(formula = mpg ~ vehicle.length + vehicle.weight + ground.clearance + 
+    AWD, data = Mech_Cars)
+    Coefficients:
+    (Intercept)    vehicle.length    vehicle.weight  ground.clearance           AWD  
+    -97.283317          6.233069          0.001169          3.419144         -3.749275
+    
+
+    Using a multiple linear regression model, we are able to predict the mpg of
+    MechaCar prototypes using a number of categorical variables such as vehicle length,     vehcle weight, ground clearance among others.Some variables however, are too small
+    to reject the null hypothesis and they include:
+
+                      intercept
+                      Vehicle length
+                      ground clearance
+          
+
+# Is the slope of the linear model considered to be zero? Why or why not?
+
+    The p value = 1.586e-11  much smaller than the assumed significance level of 0.05%.
+    Therefore sufficient evidence to reject null hypothesis, which means the slope of
+    our linear model is NOT zero. Statistically significant difference
+    
+
+# Does this linear model predict mpg of MechaCar prototypes effectively?Why or why not?
+
+    The r2 value = 0.708 approximately 70% of all mpg predictions will be correct when     using mutiple linear regression.Therefore, yes model predicts prototype     
+    effectively
+    
+
+                            # Suspension Coil Summary #
+                            
+Summary Statistics table for the suspension coil's pounds-per-inch continuous variable.   
+       
+         stargazer(subset(suspen_data, select =c(PSI)), type ='text')
+        ==============================================================
+                Statistic  N    Mean    St. Dev.  Min  Pctl(25) Pctl(75)  Max 
+        --------------------------------------------------------------
+                PSI       150 1,498.780  7.893   1,452  1,498    1,501   1,542
+        --------------------------------------------------------------
+                              
+Interpretation of the summary Stats:
+
+    Median = 1500
+    This is the number in the middle or halfway the distribution of the 150 PSI            observation. There are 74 of the PSI observation above and 74 below, the middle        value after sorting the distribution is the median
+    
+    Mean = 1,498.78
+    If we piled all the PSI observation together and distributed them evenly over the      150 vehicleID, each vehicleID would have approximately 1.5 suspension coil 
+    
+    Std. Dev = 7.893
+    Tells us the deviation from the sample mean with respect to PSI. Its a measure of      dispersion, it tells us on average how far the observation is from the mean
+    
+    Variance = 62.29
+    It measures how far a set of numbers are spread out from their mean value.
+    In this example the current manufacturing data is approximately 62% within 1 
+    standard deviation of the mean.
+    
+    Because the design specifications for the MechaCar suspension coils dictate that  
+    the variance of the suspension coils must not exceed 100 pounds per inch, our 
+    current manufacturing data meet the design specification as our variance = 62.29.
+    
+     
+                       # Suspension Coil T-Test #
+                       
+      One Sample t-test
+      data:  suspen_data$PSI
+      t = 1084.3, df = 149, p-value < 2.2e-16
+      alternative hypothesis: true mean is not equal to 800
+      95 percent confidence interval:
+              1497.507 1500.053
+      sample estimates:
+              mean of x 
+      1498.78 
+
+        
+  A t = 1084.3 and p-value < 2.2e-16 does not support the alternative hypothesis which,   is the true mean is not equal to 800. Also the group mean(shown in the 95 percentile)   is between 1497.507 and 1500.053, meaning we are 95% confident that the mean velocity   is between 1497.507 and 1500.053, with a sample mean of 1498.78.
+  The P value is very small so the evidence against the null hypothesis in favour of     the alternative is significant, therefore reject the null hypothesis
+  
+  
+  
+                       # Design Your Own Study #
+                       
+# Write a short description of a statistical study that can quantify how the MechaCar outperforms the competition. In your study design, be sure to write about the following considerations:
+      
+     Finding and knowing where the opportunities are in the car market is critical.
+     Follwoing that, knowing the customer well enough and taking the time to document       their experience, would place MechaCar ahead of competition.
+     Also, understanding and measuring consumer behavior such as, buying habits of the
+     consumers and how much on average would a consumer spend on an efficient car,     
+     would also help MechaCar quantify consumer answers for making business decisions 
+     and predictions. A good example of a quantifiable habit would be consumers tend to      buy more fuel efficiency cars, cars with a high vehicle weight and also cars with      good mpg.
+
+
+    1)Think critically about what metrics you think would be of interest to a consumer                   (cost, fuel efficiency, color options, etc.).
+
+    The cost of vehicle and fuel efficiency per vehicle would be the metric of interest     to the consumer, as should the car company. In general, consumers would want more      for their money, so a low cost, fuel efficiency car is likely to win over
+    competition.There has been consumer reports that show that consumers reported they     would spend over $1000 more on cas with high improved fuel economy(MPG). In these
+    reports it showed that consumers decision-making were impacted once they were     
+    presented with the MPG information, and those respondents in the end choose a 
+    more efficient vehicle.
+    
+    
+    2) Determine what question we would ask, what the null and alternative hypothesis      would be to answer that question, and what statistical test could be used to test      this hypothesis.
+      
+    Question: How much is a consumer willing to spend on a car in a crowded car market?
+    Null & Alternative Hypothesis: The null hypothesis would be: the mean consumer   
+                                   spending on a car is $15,000.
+                                   While the alternative is that the mean consumer                                        spending on a car is not $15,000.
+    Statistical Test: Regression Analysis
+    
+    We will use the regression analysis because it is possible to predict values for a     dependent variable using a linear model and influence of the independent variable.     For example, time spent to document consumer experience(independent variable)
+    causes a change in consumer behaviour/satisfaction(dependent variable).
+    
+    3) Knowing what test should be used, what data should be collected? Hint: Look at      the cheat sheetPreview the document for required variables.
+    
+    The type of data to be collected for a regression analysis is continuous numerical 
+    data type for both the dependent and independent variables, as a continuous value 
+    can be subdivided infinitely
+              
+           

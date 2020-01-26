@@ -3,7 +3,8 @@
                                
                                # MPG Regression #
 
-# Which variables/coefficients provided a non-random(too small to reject the null hypothesis) amount of variance to the mpg values in the dataset?
+# Which variables/coefficients provided a non-random(too small to reject the null hypothesis) 
+  amount of variance to the mpg values in the dataset?
 
 
     Multiple Linear Regression Results
@@ -88,7 +89,9 @@ Interpretation of the summary Stats:
 
         
   A t = 1084.3 and p-value < 2.2e-16 does not support the alternative hypothesis which, is the true mean is not equal to 800. 
-  Also the group mean(shown in the 95 percentile) is between 1497.507 and 1500.053, meaning we are 95% confident that the mean velocity   is between 1497.507 and 1500.053, with a sample mean of 1498.78. The P value is very small so the evidence against the null hypothesis   in favour of the alternative is significant, therefore reject the null hypothesis
+  Also the group mean(shown in the 95 percentile) is between 1497.507 and 1500.053, meaning we are 95% confident that the mean
+  velocity is between 1497.507 and 1500.053, with a sample mean of 1498.78. The P value is very small so the evidence against
+  the null hypothesis in favour of the alternative is significant, therefore reject the null hypothesis
   
   
   

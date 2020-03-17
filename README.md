@@ -36,10 +36,10 @@ Load, clean up, and reshape datasets using tidyverse in R. Use some of the tidyv
  ### RESULTS
   * Visualization:
   
- <img align="left" width="550" src="pics/visualization_dataset.png"><br/><br/><br/>
+ <img align="left" width="650" src="pics/visualization_dataset.png"><br/><br/><br/>
  
  
- <img align="left" width="550" src="pics/plots.png"><br/><br/><br/><br/>
+ <img align="left" width="650" src="pics/plots.png"><br/><br/><br/><br/>
  
  
 ### THINGS LEARNED

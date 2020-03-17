@@ -17,9 +17,19 @@ Load, clean up, and reshape datasets using tidyverse in R. Use some of the tidyv
   * Clean Up:
   The dplyr library contains a wide variety of functions that can be chained together to transform data quickly and easily.
     * mutate() transforms a data frame and include new calculated data columns.
+     <img align="left" width="260" src="/pics/street.png"><br/>
     * group_by() tells dplyr which factor (or list of factors in order) to group our data frame by.
+    <img align="left" width="260" src="/pics/satellite.png"><br/>
     * summarize() creates columns in our summary data frame and will use statistics summary functions such as mean(), median(),
       sd(), min(), max(), and n().
+     <img align="left" width="260" src="/pics/satellite.png"><br/>
+
+
+   
+<img align="left" width="260" src="/pics/satellite.png"><br/>
+<img align="left" width="260" src="/pics/dark.png"><br/>
+     
+  
 
 ![title](link)
 

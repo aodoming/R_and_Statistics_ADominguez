@@ -24,28 +24,21 @@ Load, clean up, and reshape datasets using tidyverse in R. Use some of the tidyv
     
     * summarize() creates columns in our summary data frame and will use statistics summary functions such as mean(), median(),
       sd(), min(), max(), and n().
- <img align="left" width="450" src="pics/RAnalysis_cleanUp_summarize.PNG"><br/>
+ <img align="center" width="450" src="pics/RAnalysis_cleanUp_summarize.PNG"><br/>
 
 
-
-
-
-plots 
-pics/plots.png
-visualizatio
-pics/visualization_dataset.png
-
-   
-<img align="left" width="260" src="/pics/satellite.png"><br/>
-<img align="left" width="260" src="/pics/dark.png"><br/>
-     
-  
-
-![title](link)
-
-
-### RESULTS
-
+  * Reshape:
+  The tidyr library from the tidyverse has the gather() and spread() functions to help reshape our data and redesign our dataframe to 
+  a less complicated and more compatible versions.
+    * gather() changes the dataset to a long format.
+    * spread() spreads out a variable column of multiple measurements into columns for each variable.
+ 
+ ### RESULTS
+  * Visualization:
+ <img align="center" width="450" src="pics/visualization_dataset.png"><br/><br/><br/>
+ 
+ <img align="center" width="450" src="pics/plots.png"><br/><br/>
+ 
 ### THINGS LEARNED
 * Load, clean up, and reshape datasets using tidyverse in R.
 * Visualizing datasets with basic plots such as line, bar, and scatter plots using ggplot2.

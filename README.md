@@ -39,7 +39,8 @@ Load, clean up, and reshape datasets using tidyverse in R. Use some of the tidyv
  <img align="left" width="550" src="pics/visualization_dataset.png"><br/><br/><br/>
  
  
- <img align="left" width="550" src="pics/plots.png"><br/><br/>
+ <img align="left" width="550" src="pics/plots.png"><br/><br/><br/><br/>
+ 
  
 ### THINGS LEARNED
 * Load, clean up, and reshape datasets using tidyverse in R.

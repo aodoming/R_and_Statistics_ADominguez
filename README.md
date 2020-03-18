@@ -24,7 +24,8 @@ Load, clean up, and reshape datasets using tidyverse in R. Use some of the tidyv
     
     * summarize() creates columns in our summary data frame and will use statistics summary functions such as mean(), median(),
       sd(), min(), max(), and n().
- <img align="center" width="550" src="pics/RAnalysis_cleanUp_summarize.PNG"><br/>
+ 
+ <img align="center" width="550" src="pics/RAnalysis_cleanUp_summarize.PNG"><br/><br/>
 
 
   * Reshape:
